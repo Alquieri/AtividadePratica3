@@ -70,7 +70,7 @@ public abstract class Funcionario {
 
 
 
-    public abstract int CalcularSalario();
+    public abstract int CalcularSalario( );
 
 
     

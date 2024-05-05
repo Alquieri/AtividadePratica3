@@ -109,17 +109,7 @@ public class Sistema {
                 System.out.println("\nFuncionário " + matricula + " não localizado no cadastro");
             }
             break;
-            case 6:
-            System.out.println("\nCalcular salario gerente");
-            System.out.println("\nDigite as horas trabalhadas:");
-            int horasTrabalho = Console.lerInt();
-
-            Gerente.CalcularSalario(horasTrabalho);
-
-
-
-
-
+        
             case 0:
 
             System.out.println("\nO Sistema foi finalizado...");

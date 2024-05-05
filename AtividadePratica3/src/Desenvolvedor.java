@@ -19,9 +19,9 @@ public class Desenvolvedor extends Funcionario implements Trabalhavel {
 
     @Override
     public int CalcularSalario() {
-        return 0;
-      
+        return 4000;
     
+
     }
 
 

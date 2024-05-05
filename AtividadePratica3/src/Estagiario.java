@@ -4,7 +4,9 @@ public class Estagiario extends Funcionario  implements Trabalhavel{
     String supervisor;
     int horasTrabalho;
 
+    public Estagiario(){
 
+    }
 
 
     public Estagiario(String nome, int matricula, String supervisor, int horasTrabalho) {
@@ -22,11 +24,10 @@ public class Estagiario extends Funcionario  implements Trabalhavel{
 
     @Override
     public int CalcularSalario() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'CalcularSalario'");
+        
+        return 1320 ;
+
     }
-
-
 
 
     @Override

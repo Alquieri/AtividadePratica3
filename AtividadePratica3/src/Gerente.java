@@ -4,10 +4,6 @@ public class Gerente extends Funcionario implements Trabalhavel {
     int bonus = 1500;
     
 
-
-
-
-
     public Gerente(String nome, int matricula, String equipe, int bonus) {
         super(nome, matricula);
         this.equipe = equipe;
@@ -23,8 +19,6 @@ public class Gerente extends Funcionario implements Trabalhavel {
         
     }
 
-    
-
 
     @Override
     public void Trabalhar() {
@@ -39,12 +33,14 @@ public class Gerente extends Funcionario implements Trabalhavel {
        
     }
 
+   
+
     @Override
-    public int CalcularSalario(int horas) {
-
-        return horas * 60 +  bonus;
-
+    public int CalcularSalario() {
+        
+        return 7000 + 1500 ;
+        
+    }
     }
 
-    
-}
+
