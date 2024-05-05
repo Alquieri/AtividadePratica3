@@ -2,32 +2,41 @@ public class Desenvolvedor extends Funcionario implements Trabalhavel {
 
     String tecnologia;
 
+    public Desenvolvedor(){
+
+    }
 
 
+    public Desenvolvedor(String nome, int matricula, String tecnologia) {
+        super(nome, matricula);
+        this.tecnologia = tecnologia;
+    }
+
+
+    public Desenvolvedor(String tecnologia) {
+        this.tecnologia = tecnologia;
+    }
 
     @Override
-    public void CalcularSalario() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'CalcularSalario'");
+    public int CalcularSalario() {
+        return 0;
+      
+    
     }
 
 
     @Override
     public void Trabalhar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Trabalhar'");
+
+        System.out.println("O desenvolvesro está trabalhando");
+   
     }
 
 
     @Override
     public void RelatarProgresso() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'RelatarProgresso'");
+        System.out.println("Progresso Desenvolvedor");
     }
-
-
-    
-
 
 
 

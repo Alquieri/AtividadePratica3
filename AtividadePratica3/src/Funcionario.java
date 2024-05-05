@@ -5,16 +5,21 @@ public abstract class Funcionario {
 
     private String nome;
     private int matricula;
+
     
 
     private static List<Funcionario> listaFuncionarios = new ArrayList<>();
-    
+
 
     public static void cadastrar(Funcionario func){
         listaFuncionarios.add(func);
     }
 
     
+
+
+
+
 
 
     public Funcionario(String nome, int matricula) {
@@ -65,7 +70,7 @@ public abstract class Funcionario {
 
 
 
-    public abstract void CalcularSalario();
+    public abstract int CalcularSalario();
 
 
     

@@ -1,33 +1,50 @@
 public class Gerente extends Funcionario implements Trabalhavel {
 
     String equipe;
-    int bonus;
+    int bonus = 1500;
+    
 
 
 
 
 
-    public Gerente(String nome, int matricula, String nomeProjeto) {
-        //TODO Auto-generated constructor stub
+    public Gerente(String nome, int matricula, String equipe, int bonus) {
+        super(nome, matricula);
+        this.equipe = equipe;
+        this.bonus = bonus;
     }
 
+    public Gerente(String equipe, int bonus) {
+        this.equipe = equipe;
+        this.bonus = bonus;
+    }
+
+    public Gerente(String nome, int matricula, String nomeProjeto) {
+        
+    }
+
+    
+
+
     @Override
-    public void CalcularSalario() {
+    public void Trabalhar() {
+        System.out.println("O gerente está trabalhando");
+
         
     }
 
     @Override
-    public void Trabalhar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Trabalhar'");
+    public void RelatarProgresso() {
+        System.out.println("Progresso Gerente");
+       
     }
 
     @Override
-    public void RelatarProgresso() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'RelatarProgresso'");
-    }
+    public int CalcularSalario(int horas) {
 
+        return horas * 60 +  bonus;
+
+    }
 
     
 }
